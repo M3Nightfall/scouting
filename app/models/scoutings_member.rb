@@ -1,0 +1,2 @@
+class ScoutingsMember < ApplicationRecord
+end

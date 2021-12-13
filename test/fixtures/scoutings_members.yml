@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ScoutNummer: 
+  VoorNaam: MyString
+  AchterNaam: MyString
+  AantalBadges: 
+
+two:
+  ScoutNummer: 
+  VoorNaam: MyString
+  AchterNaam: MyString
+  AantalBadges: 
