@@ -1,3 +1,6 @@
 <h1> Hallo </h1>
+<% if logged_in?%>
+    <h2>Welcome <%=current_user.username %> </h2>
+<% end %>
 
-<%= link_to 'lijst met scouts', scouts_path() %>
+<%= link_to 'lijst met scouts', members_path() %>

@@ -1,0 +1,13 @@
+<h1> Huidige Scouts </h1>
+
+<%= link_to 'nieuwe scout aanmelden', new_member_path() %>
+
+
+<ul><% @members.each do |member|%> 
+    <li>    <%= member.scoutnummer %> &nbsp
+        <%= member.voornaam %> &nbsp
+        <%= member.achternaam %> &nbsp
+<%end%>
+</ul>
+
+

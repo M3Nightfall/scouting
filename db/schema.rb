@@ -10,13 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_13_133411) do
+ActiveRecord::Schema.define(version: 2022_01_23_191713) do
+
+  create_table "badges", force: :cascade do |t|
+    t.string "Les_Naam"
+    t.string "Chapter"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "members", force: :cascade do |t|
+    t.integer "scoutnummer"
+    t.string "voornaam"
+    t.string "achternaam"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "scoutings_members", force: :cascade do |t|
     t.integer "ScoutNummer"
     t.string "VoorNaam"
     t.string "AchterNaam"
-    t.integer "AantalBadges"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digets"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
